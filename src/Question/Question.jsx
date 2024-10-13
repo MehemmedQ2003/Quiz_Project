@@ -58,7 +58,7 @@ const Question = ({ questions }) => {
           )}
         </div>
       ))}
-      {questionsAnswered === 30 && !showResults && (
+      {questionsAnswered === 0 && !showResults && (
         <button onClick={handleSubmit} className="submit-button btn btn-primary">
           Submit Answers
         </button>
