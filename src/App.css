@@ -1,0 +1,13 @@
+::selection{
+    background-color: #0d6efd;
+    color: #fff;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
