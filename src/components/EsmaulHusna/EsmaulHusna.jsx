@@ -1,6 +1,8 @@
 import { useState } from 'react';
-import './Questions.css';
+import './EsmaulHusna.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from '../../layout/header/Header';
+
 
 const Question = ({ questions }) => {
   const [userAnswers, setUserAnswers] = useState({});
@@ -50,8 +52,9 @@ const Question = ({ questions }) => {
   const { correctCount, incorrectCount } = getCorrectAndIncorrectCount();
 
   return (
-    <div className="question-container p-5">
-      <h1 className='quiz-title text-center fw-bold bg-primary text-white p-3 rounded-3'>Quiz</h1>
+    <div className="question-container container py-3">
+      <Header />
+      <h3 className='quiz-title text-center fw-bold bg-primary text-white p-1 rounded-3'>Əsmaül Hüsna</h3>
       {questions.map((question) => (
         <div key={question.id} className="question p-3 border border-primary rounded-3 my-3">
           <h2><b>{question.id}.</b> {question.questionTitle}</h2>
@@ -98,7 +101,7 @@ const Question = ({ questions }) => {
           <p className="text-center">Incorrect Answers: {incorrectCount}</p>
           {questions.map((question) => (
             <div key={question.id} className="result-item p-3 border border-primary rounded-3 my-3 w-75 mx-auto">
-              <p><b style={{color: 'red', fontSize: '20px'}}>{question.id}.</b> Sual: {question.questionTitle}</p>
+              <p><b style={{ color: 'red', fontSize: '20px' }}>{question.id}.</b> Sual: {question.questionTitle}</p>
               <p><b>Sənin cavabın:</b> {userAnswers[question.id] || 'Not answered'}</p>
               <p><b>Doğru cavab:</b> {question.correctAnswers.join(', ')}</p>
             </div>

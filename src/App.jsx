@@ -1,7 +1,12 @@
 import './App.css'
-import Question from './Question/Question';
+import EsmaulHusna from './components/EsmaulHusna/EsmaulHusna';
+import { Routes, Route } from 'react-router-dom';
+import Tefsir from './components/Tefsir/Tefsir';
+import Home from './components/Home/Home';
+import Footer from './layout/footer/Footer';
+import NavBar from './layout/navbar/Navbar';
 
-const questions =  [
+const questions = [
     {
         "id": 1,
         "questionTitle": "Allahın 'Ar-Rahman' isminin mənası nədir?",
@@ -1108,7 +1113,7 @@ const questions =  [
             "Susturucu"
         ]
     },
-             {
+    {
         "id": 80,
         "questionTitle": "Allahın 'Al-Hasib' isminin mənası nədir?",
         "img": "https://example.com/images/al-hasib.png",
@@ -1123,14 +1128,18 @@ const questions =  [
         ]
     }
 ];
-  
-
 
 
 function App() {
     return (
         <>
-            <Question questions={questions} />
+            <NavBar />
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="EsmaulHusna" element={<EsmaulHusna questions={questions} />} />
+                <Route path="Tefsir" element={<Tefsir />} />
+            </Routes>
+            <Footer />
         </>
     )
 }
