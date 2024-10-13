@@ -421,6 +421,20 @@ const questions = [
         "correctAnswers": [
             "Hər şeyin sayını bilən"
         ]
+    },
+    {
+        "id": 31,
+        "questionTitle": "Allahın 'Əl-Müntəqim' isminin mənası nədir?",
+        "img": "https://example.com/images/al-muntakim.png",
+        "answers": [
+            "Hər şeyi bilən",
+            "Qisas sahibi",
+            "Bağışlayan",
+            "Ədalətli"
+        ],
+        "correctAnswers": [
+            "Qisas sahibi",
+        ]
     }
 ];
 
