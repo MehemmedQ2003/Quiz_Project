@@ -2,7 +2,6 @@ import { useState } from 'react';
 import './Questions.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
 const Question = ({ questions }) => {
   const [userAnswers, setUserAnswers] = useState({});
   const [showResults, setShowResults] = useState(false);
@@ -32,6 +31,23 @@ const Question = ({ questions }) => {
     }
     return 'incorrect';
   };
+
+  const getCorrectAndIncorrectCount = () => {
+    let correctCount = 0;
+    let incorrectCount = 0;
+
+    questions.forEach(question => {
+      if (getAnswerStatus(question, userAnswers[question.id]) === 'correct') {
+        correctCount++;
+      } else {
+        incorrectCount++;
+      }
+    });
+
+    return { correctCount, incorrectCount };
+  };
+
+  const { correctCount, incorrectCount } = getCorrectAndIncorrectCount();
 
   return (
     <div className="question-container p-5">
@@ -78,6 +94,8 @@ const Question = ({ questions }) => {
       {showResults && (
         <div className="results">
           <h2 className='text-center fw-bold bg-success text-white p-3 rounded-3 mt-5 mb-3'>Results</h2>
+          <p className="text-center">Correct Answers: {correctCount}</p>
+          <p className="text-center">Incorrect Answers: {incorrectCount}</p>
           {questions.map((question) => (
             <div key={question.id} className="result-item p-3 border border-primary rounded-3 my-3 w-75 mx-auto">
               <p><b style={{color: 'red', fontSize: '20px'}}>{question.id}.</b> Sual: {question.questionTitle}</p>
@@ -90,6 +108,5 @@ const Question = ({ questions }) => {
     </div>
   );
 };
-
 
 export default Question;
