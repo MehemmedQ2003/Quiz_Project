@@ -111,8 +111,8 @@ const Question = ({ questions }) => {
       {showResults && (
         <div className="results-summary text-center mt-4">
           <h4 className="fw-bold fs-2">Nəticə:</h4>
-          <p className='fs-4 font-monospace'>Doğru cavabların sayı: {correctCount}</p>
-          <p className='fs-4 font-monospace'>Səhv cavabların sayı: {incorrectCount}</p>
+          <p className='fs-4 text-success fw-bold'>Doğru cavabların sayı: {correctCount}</p>
+          <p className='fs-4 text-danger fw-bold'>Səhv cavabların sayı: {incorrectCount}</p>
         </div>
       )}
     </div>

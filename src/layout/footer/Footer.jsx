@@ -59,11 +59,11 @@ const Footer = () => {
             <Container>
                 <Row>
                     <Col lg={3} md={6} className='my-3 text-center' data-aos="fade-right">
-                        <h5 className='text-decoration-underline font-monospace'>Test ikonumuz</h5>
+                        <h5 className='text-decoration-underline mb-3 fs-3'>Test ikonumuz</h5>
                         <img src={logo} alt="logo" className='border border-white rounded-4' width="100" height="100" />
                     </Col>
                     <Col lg={3} md={6} className='my-3'>
-                        <h5 className='text-decoration-underline font-monospace text-center'>İstifadəçi linkləri</h5>
+                        <h5 className='text-decoration-underline fs-3 text-center'>İstifadəçi linkləri</h5>
                         <ul className="list-unstyled text-center">
                             {
                                 navbars.map((navbar, index) => (
@@ -76,13 +76,13 @@ const Footer = () => {
                             }
                         </ul>
                     </Col>
-                    <Col lg={3} md={6} className='my-3' data-aos="fade-left">
-                        <h5 className='text-decoration-underline font-monospace text-center'>Bizimlə Əlaqə</h5>
+                    <Col lg={3} md={6} className='my-3' data-aos="fade-up">
+                        <h5 className='text-decoration-underline fs-3 text-center'>Bizimlə Əlaqə</h5>
                         <p className='fw-bold text-center'>Email: <a href="mailto:mehemmed.qardasov2003@gmail.com" className="fw-normal text-white text-decoration-none">mehemmed.qardasov2003@gmail.com</a></p>
                         <p className='fw-bold text-center'>Phone: <a href="tel:+994557135290" className="fw-normal text-white text-decoration-none">+994 55 713 52 90</a></p>
                     </Col>
-                    <Col lg={3} md={6} className='my-3' data-aos="fade-left">
-                        <h5 className='text-decoration-underline font-monospace text-center'>Sosial Şəbəkələrimiz</h5>
+                    <Col lg={3} md={6} className='my-3' data-aos="fade-up">
+                        <h5 className='text-decoration-underline fs-3 text-center'>Sosial Şəbəkələrimiz</h5>
                         <ul className="list-unstyled text-center d-flex align-items-center justify-content-center gap-3">
                             <div className='container'>
                                 <div className='row px-4'>
@@ -102,9 +102,9 @@ const Footer = () => {
                         </ul>
                     </Col>
                 </Row>
-                <Row className="mt-3" data-aos="fade-left">
-                    <Col className="text-center">
-                        <p className='fw-bold mt-4'>
+                <Row className="mt-3" data-aos="fade-up">
+                    <Col lg={12} className="text-center">
+                        <p className='fw-bold mt-4 text-white'>
                             &copy; {new Date().getFullYear()} İslami Test. Bütün hüquqlar qorunur.
                         </p>
                     </Col>
