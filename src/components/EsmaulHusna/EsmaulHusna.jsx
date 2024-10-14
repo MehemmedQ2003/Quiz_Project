@@ -1,29 +1,37 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './EsmaulHusna.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from '../../layout/header/Header';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Question = ({ questions }) => {
   const [userAnswers, setUserAnswers] = useState({});
   const [showResults, setShowResults] = useState(false);
-  const [questionsAnswered, setQuestionsAnswered] = useState(0);
-  const [showAlert, setShowAlert] = useState(false); // Xəbərdarlıq üçün state
+  const [showAlert, setShowAlert] = useState(false);
+
+  useEffect(() => {
+    AOS.init({
+        duration: 1000,
+        easing: 'ease-in-out',
+        once: true,
+        mirror: false,
+    });
+  }, []);
 
   const handleAnswerSelect = (questionId, answer) => {
     setUserAnswers(prevAnswers => ({
       ...prevAnswers,
       [questionId]: answer
     }));
-    setQuestionsAnswered(prevCount => prevCount + 1);
   };
 
   const handleSubmit = () => {
-    if (questionsAnswered < questions.length) {
-      setShowAlert(true); // Xəbərdarlığı göstər
+    if (Object.keys(userAnswers).length < questions.length) {
+      setShowAlert(true);
     } else {
       setShowResults(true);
-      setShowAlert(false); // Xəbərdarlığı gizlət
+      setShowAlert(false);
     }
   };
 
@@ -52,16 +60,20 @@ const Question = ({ questions }) => {
   const { correctCount, incorrectCount } = getCorrectAndIncorrectCount();
 
   return (
-    <div className="question-container container py-3">
+    <div className="question-container container py-3" data-aos="fade-up">
       <Header />
       <h3 className='quiz-title text-center fw-bold bg-primary text-white p-1 rounded-3'>Əsmaül Hüsna</h3>
       {questions.map((question) => (
-        <div key={question.id} className="question p-3 border border-primary rounded-3 my-3">
+        <div
+          key={question.id}
+          className={`question p-3 border border-primary rounded-3 my-3 ${showResults ? getAnswerStatus(question, userAnswers[question.id]) : ''}`}
+          style={{ backgroundColor: showResults && getAnswerStatus(question, userAnswers[question.id]) === 'correct' ? 'lightgreen' : showResults ? 'lightcoral' : 'white' }}
+        >
           <h2><b>{question.id}.</b> {question.questionTitle}</h2>
           <ul>
             {question.answers.map((answer) => (
-              <li key={answer}>
-                <label className='answer-label fs-5 d-flex gap-2'>
+              <li key={answer} data-aos="fade-right">
+                <label className='answer-label fs-5 d-flex gap-2 '>
                   <input
                     type="radio"
                     className='answer-input'
@@ -77,15 +89,17 @@ const Question = ({ questions }) => {
             ))}
           </ul>
           {showResults && (
-            <p className={getAnswerStatus(question, userAnswers[question.id])}>
-              {getAnswerStatus(question, userAnswers[question.id]) === 'correct' ? 'Correct!' : 'Incorrect'}
-            </p>
+            <div className="result-text mt-2">
+              {getAnswerStatus(question, userAnswers[question.id]) === 'incorrect' && (
+                <p className='text-white fs-5'><b>Doğru cavab:</b> {question.correctAnswers.join(', ')}</p>
+              )}
+            </div>
           )}
         </div>
       ))}
       {!showResults && (
-        <button onClick={handleSubmit} className="submit-button btn btn-primary">
-          Cavabları götür
+        <button onClick={handleSubmit} className="submit-button btn btn-primary" data-aos="fade-left">
+          Cavabları gör
         </button>
       )}
       {showAlert && (
@@ -95,17 +109,10 @@ const Question = ({ questions }) => {
         </div>
       )}
       {showResults && (
-        <div className="results">
-          <h2 className='text-center fw-bold bg-success text-white p-3 rounded-3 mt-5 mb-3'>Results</h2>
-          <p className="text-center">Correct Answers: {correctCount}</p>
-          <p className="text-center">Incorrect Answers: {incorrectCount}</p>
-          {questions.map((question) => (
-            <div key={question.id} className="result-item p-3 border border-primary rounded-3 my-3 w-75 mx-auto">
-              <p><b style={{ color: 'red', fontSize: '20px' }}>{question.id}.</b> Sual: {question.questionTitle}</p>
-              <p><b>Sənin cavabın:</b> {userAnswers[question.id] || 'Not answered'}</p>
-              <p><b>Doğru cavab:</b> {question.correctAnswers.join(', ')}</p>
-            </div>
-          ))}
+        <div className="results-summary text-center mt-4">
+          <h4 className="fw-bold fs-2">Nəticə:</h4>
+          <p className='fs-4 font-monospace'>Doğru cavabların sayı: {correctCount}</p>
+          <p className='fs-4 font-monospace'>Səhv cavabların sayı: {incorrectCount}</p>
         </div>
       )}
     </div>

@@ -8,11 +8,8 @@ const Header = () => {
         <header className="my-2">
             <Container>
                 <Row className="align-items-center">
-                    {/* <Col className='text-center mb-3 mb-md-0' md={6}>
-                        <img src={logo} alt="İslami Test Logo" width="400" height="80" className="img-fluid" />
-                    </Col>
-                    <Col className='text-center mb-3 mb-md-0' md={6}>
-                        <img src={logo} alt="İslami Test Logo" width="400" height="80" className="img-fluid" />
+                    {/* <Col className='text-center mb-3 mb-md-0' md={12}>
+                        <img src={logo} alt="İslami Test Logo" width="800" height="80" className="img-fluid" />
                     </Col> */}
                 </Row>
             </Container>
