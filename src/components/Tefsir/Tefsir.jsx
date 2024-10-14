@@ -78,7 +78,7 @@ const Tefsir = ({ questions }) => {
   return (
     <div className="question-container container py-3" data-aos="fade-up">
       <Header />
-      <h3 className='quiz-title text-center fw-bold bg-primary text-white p-1 rounded-3'>Təfsir</h3>
+      <h3 className='quiz-title text-center fw-bold p-1 rounded-3'>Təfsir</h3>
       {questions.map((question) => (
         <div
           key={question.id}
