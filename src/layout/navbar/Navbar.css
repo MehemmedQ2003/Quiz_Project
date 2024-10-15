@@ -11,23 +11,6 @@
     background-color: #0B1B28;
 }
 
-/* Custom styles for the dropdown items */
-.custom-dropdown-item {
-    background-color: #0b1b28;
-    color: white;
-}
-
-.custom-dropdown-item:hover {
-    background-color: white;
-    color: #0b1b28;
-}
-
-.custom-dropdown-item:focus {
-    background-color: #0b1b28;
-    color: white;
-}
-
-
 .shadow-effect {
     box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
     transition: box-shadow 0.3s ease;

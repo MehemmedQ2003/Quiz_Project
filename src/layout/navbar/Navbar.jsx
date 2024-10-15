@@ -41,16 +41,25 @@ const NavBar = () => {
                         <Dropdown.Toggle id="dropdown-basic" className='w-100 px-3 fw-bold fs-5'>
                             Səhifələr
                         </Dropdown.Toggle>
-                        <Dropdown.Menu className='w-100'>
+                        <Dropdown.Menu className='w-100 border border-white' style={{ backgroundColor: '#0B1B28' }}>
                             {
                                 navbars.map((navbar, index) => (
                                     <Dropdown.Item
                                         href={`/${navbarLinks[index]}`}
                                         key={index}
-                                        className='dropdown-item text-center fs-5 custom-dropdown-item'
+                                        className='dropdown-item text-center fs-5 custom-dropdown-item' style={{ backgroundColor: '#0B1B28', color: 'white' }} 
+                                        onMouseEnter={(e) => {
+                                            e.target.style.backgroundColor = 'white';
+                                            e.target.style.color = '#0B1B28';
+                                        }}
+                                        onMouseLeave={(e) => {
+                                            e.target.style.backgroundColor = '#0B1B28';
+                                            e.target.style.color = 'white';
+                                        }}
                                     >
                                         {navbar}
                                     </Dropdown.Item>
+
                                 ))
                             }
                         </Dropdown.Menu>
