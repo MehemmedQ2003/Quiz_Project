@@ -72,7 +72,7 @@ const Question = ({ questions }) => {
           <h2><b>{question.id}.</b> {question.questionTitle}</h2>
           <ul>
             {question.answers.map((answer) => (
-              <li key={answer} data-aos="fade-right">
+              <li key={answer} >
                 <label className='answer-label fs-5 d-flex gap-2 '>
                   <input
                     type="radio"

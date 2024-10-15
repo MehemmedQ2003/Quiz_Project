@@ -1,10 +1,13 @@
 import './App.css'
 import EsmaulHusna from './components/EsmaulHusna/EsmaulHusna';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Tefsir from './components/Tefsir/Tefsir';
 import Home from './components/Home/Home';
 import Footer from './layout/footer/Footer';
 import NavBar from './layout/navbar/Navbar';
+import Login from './components/Login/Login';
+import Register from './components/Register/Register';
+
 
 const questions = [
     {
@@ -304,15 +307,20 @@ const tafsirQuestions = [
 
 
 function App() {
+    const location = useLocation();
+    const isAuthPage = location.pathname === '/login' || location.pathname === '/register';
+
     return (
         <>
-            <NavBar />
+            {!isAuthPage && <NavBar />}
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="EsmaulHusna" element={<EsmaulHusna questions={questions} />} />
-                <Route path="Tefsir" element={<Tefsir questions={tafsirQuestions} />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/register" element={<Register />} />
+                <Route path="/esmaulhusna" element={<EsmaulHusna questions={questions} />} />
+                <Route path="/tefsir" element={<Tefsir questions={tafsirQuestions} />} />
             </Routes>
-            <Footer />
+            {!isAuthPage && <Footer />}
         </>
     )
 }

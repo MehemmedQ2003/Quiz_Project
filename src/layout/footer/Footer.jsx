@@ -58,11 +58,11 @@ const Footer = () => {
         <footer className="text-light mt-5" data-aos="fade-up">
             <Container>
                 <Row>
-                    <Col lg={3} md={6} className='my-3 text-center' data-aos="fade-right">
+                    <Col lg={3} md={6} className='my-3 text-center' data-aos="fade-up">
                         <h5 className='text-decoration-underline mb-3 fs-3'>Test ikonumuz</h5>
                         <img src={logo} alt="logo" className='border border-white rounded-4' width="100" height="100" />
                     </Col>
-                    <Col lg={3} md={6} className='my-3'>
+                    <Col lg={3} md={6} className='my-3' data-aos="fade-up">
                         <h5 className='text-decoration-underline fs-3 text-center'>İstifadəçi linkləri</h5>
                         <ul className="list-unstyled text-center">
                             {

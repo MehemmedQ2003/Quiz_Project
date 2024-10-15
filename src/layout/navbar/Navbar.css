@@ -1,3 +1,39 @@
 .navbar{
     background-color: #0B1B28;
 }
+
+#dropdown-basic{
+    background-color: #0B1B28;
+    border: 1px solid #0B1B28;
+}
+
+.dropdown-item{
+    background-color: #0B1B28;
+}
+
+/* Custom styles for the dropdown items */
+.custom-dropdown-item {
+    background-color: #0b1b28;
+    color: white;
+}
+
+.custom-dropdown-item:hover {
+    background-color: white;
+    color: #0b1b28;
+}
+
+.custom-dropdown-item:focus {
+    background-color: #0b1b28;
+    color: white;
+}
+
+
+.shadow-effect {
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+    transition: box-shadow 0.3s ease;
+}
+
+.shadow-effect:hover {
+    box-shadow: 30px 30px 30px linear-gradient(123deg, #fa6f00, #e433ff 50%, #8575ff);
+    transition: box-shadow 0.3s ease;
+}
