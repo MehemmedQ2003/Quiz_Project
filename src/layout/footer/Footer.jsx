@@ -24,22 +24,22 @@ const socialMedia = [
     {
         icon: FaTwitter,
         color: '#1DA1F2 ',
-        link: 'https://www.twitter.com/islamic_quiz/'
+        link: 'https://x.com/mehemmedq11'
     },
     {
         icon: FaYoutube,
         color: '#FF0000',
-        link: 'https://www.youtube.com/islamic_quiz/'
+        link: 'https://www.youtube.com/@mehemmedqardasov'
     },
     {
         icon: FaLinkedin,
         color: '#0077B5',
-        link: 'https://www.linkedin.com/islamic_quiz/'
+        link: 'https://www.linkedin.com/in/mehemmed-qardasov-6ba49a235/'
     },
     {
         icon: FaGithub,
         color: 'white',
-        link: 'https://www.tiktok.com/islamic_quiz/'
+        link: 'https://github.com/MehemmedQ2003'
     }
 ];
 
@@ -55,7 +55,7 @@ const Footer = () => {
     }, []);
 
     return (
-        <footer className="text-light mt-5" data-aos="fade-up">
+        <footer className="text-light mt-5">
             <Container>
                 <Row>
                     <Col lg={3} md={6} className='my-3 text-center' data-aos="fade-up">
@@ -102,7 +102,7 @@ const Footer = () => {
                         </ul>
                     </Col>
                 </Row>
-                <Row className="mt-3" data-aos="fade-up">
+                <Row className="mt-3">
                     <Col lg={12} className="text-center">
                         <p className='fw-bold mt-4 text-white'>
                             &copy; {new Date().getFullYear()} İslami Test. Bütün hüquqlar qorunur.

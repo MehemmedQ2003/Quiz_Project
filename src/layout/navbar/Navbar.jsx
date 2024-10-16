@@ -4,7 +4,7 @@ import logo from '/image/islamic_quiz_logo.jpg';
 import { FaUser } from "react-icons/fa";
 import './Navbar.css';
 import { useState } from 'react';
-const navbars = ['Ana Səhifə', 'Əsmaül Hüsna', 'Təfsir', 'Fiqh', "Hedis"];
+const navbars = ['Ana Səhifə', 'Əsmaül Hüsna', 'Təfsir', 'Fiqh'];
 const navbarLinks = ['', 'esmaulhusna', 'tefsir', 'fiqh'];
 
 
