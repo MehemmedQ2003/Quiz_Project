@@ -29,16 +29,13 @@ const Register = () => {
         <div style={{ backgroundImage: `url(${Bgİmage})`, backgroundSize: 'cover', backgroundPosition: 'center', height: '100vh' }} className='py-4'>
             <Container>
                 <Row>
-                    <Col lg={12} className='d-flex align-items-center justify-content-between mb-4'>
-                        <div className='px-5 rounded-4'>
-                            <Link to="/login" className="text-white text-decoration-none fs-3 fw-bold">Giriş</Link>
-                        </div>
+                    <Col lg={12} className='d-flex align-items-center justify-content-start mb-3'>
                         <div className='px-5 rounded-4'>
                             <Link to="/" className="text-white text-decoration-none fs-3 fw-bold">Ana Səhifə</Link>
                         </div>
                     </Col>
                     <Col lg={12} className='d-flex align-items-center justify-content-center'>
-                        <div className='bg-secondary px-5 py-4 rounded-4'>
+                        <div className='bg-secondary px-5 py-3 rounded-4'>
                             <div className="d-flex align-items-center justify-content-center mb-4 text-white px-5">
                                 <FaRegUserCircle className='fs-1 me-2' />
                                 <h4 className='mb-0 fs-1'>Qeydiyyat</h4>
@@ -122,12 +119,17 @@ const Register = () => {
                                         type="checkbox"
                                         id="terms-checkbox"
                                     />
-                                    <Link to="/" className='text-decoration-none fw-bold' style={{ color: '#0B1B28' }}>Mən şərtlərlə razıyam</Link>
+                                    <b style={{ color: '#0B1B28' }}>Mən şərtlərlə razıyam</b>
+                                    {/* <Link to="/" className='text-decoration-none fw-bold' style={{ color: '#0B1B28' }}>Mən şərtlərlə razıyam</Link> */}
                                 </p>
                                 <Button variant="primary" type="submit" className="w-100 my-2">
                                     Qeydiyyatdan keç
                                 </Button>
                             </Form>
+                            <p className="d-flex align-items-center justify-content-center gap-2 text-center text-white mt-3">
+                                Artıq hesabınız var?
+                                <Link to="/login" className="text-decoration-none fw-bold" style={{ color: '#0B1B28' }}>Giriş</Link>
+                            </p>
                         </div>
                     </Col>
                 </Row>

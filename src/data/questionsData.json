@@ -1,0 +1,285 @@
+{
+    "esmaulHusnaQuestions": {
+        "easy": [
+            {
+                "id": 1,
+                "questionTitle": "Allahın 'Al-Ghaffar' və 'Al-Qahir' isimləri nəyi ifadə edir?",
+                "img": "https://example.com/images/al-ghaffar.png",
+                "answers": [
+                    "Çox bağışlayan",
+                    "Ədalətli",
+                    "Güclü",
+                    "Qoruyan"
+                ],
+                "correctAnswers": [
+                    "Çox bağışlayan",
+                    "Güclü"
+                ]
+            },
+            {
+                "id": 2,
+                "questionTitle": "Allahın 'Al-Fattah' isminin mənası nədir?",
+                "img": "https://example.com/images/al-fattah.png",
+                "answers": [
+                    "Qapıları açan",
+                    "Hikmət sahibi",
+                    "Hökm sahibi",
+                    "Bağışlayan"
+                ],
+                "correctAnswers": [
+                    "Qapıları açan"
+                ]
+            }
+        ],
+        "normal": [
+            {
+                "id": 4,
+                "questionTitle": "Allahın 'Al-Karim' ismi nəyi ifadə edir?",
+                "img": "https://example.com/images/al-karim.png",
+                "answers": [
+                    "Səxavətli",
+                    "Yaradan",
+                    "Müqəddəs",
+                    "Bağışlayan"
+                ],
+                "correctAnswers": [
+                    "Səxavətli"
+                ]
+            },
+            {
+                "id": 8,
+                "questionTitle": "Allahın 'Al-Hakam' ismi nəyi ifadə edir?",
+                "img": "https://example.com/images/al-hakam.png",
+                "answers": [
+                    "Ədalətli",
+                    "Güclü",
+                    "Sülh təmin edən",
+                    "Hökm sahibi"
+                ],
+                "correctAnswers": [
+                    "Ədalətli"
+                ]
+            }
+        ],
+        "hard": [
+            {
+                "id": 9,
+                "questionTitle": "Allahın 'Al-Qahir' ismi nəyi ifadə edir?",
+                "img": "https://example.com/images/al-qahir.png",
+                "answers": [
+                    "Güclü",
+                    "Müqəddəs",
+                    "Bağışlayan",
+                    "Hökm sahibi"
+                ],
+                "correctAnswers": [
+                    "Güclü"
+                ]
+            },
+            {
+                "id": 10,
+                "questionTitle": "Allahın 'Al-Müntəqim' ismi nəyi ifadə edir?",
+                "img": "https://example.com/images/al-muntakim.png",
+                "answers": [
+                    "Güclü",
+                    "Müqəddəs",
+                    "Bağışlayan",
+                    "Hökm sahibi"
+                ],
+                "correctAnswers": [
+                    "Güclü"
+                ]
+            }
+        ]
+    },
+    "tafsirQuestions": {
+        "easy": [
+            {
+                "id": 1,
+                "questionTitle": "Təfsir elminin əsas məqsədləri nələrdir?",
+                "img": "https://example.com/images/tafsir-objectives.png",
+                "answers": [
+                    "Qurani-Kərimi daha yaxşı anlamaq",
+                    "Dini mərasimləri yerinə yetirmək",
+                    "Ayələrin məna və səbəbşərhini izah etmək",
+                    "İslam tarixini öyrənmək"
+                ],
+                "correctAnswers": [
+                    "Qurani-Kərimi daha yaxşı anlamaq",
+                    "Ayələrin məna və səbəbşərhini izah etmək"
+                ]
+            },
+            {
+                "id": 3,
+                "questionTitle": "Təfsirin əsas növləri hansılardır?",
+                "img": "https://example.com/images/tafsir-types.png",
+                "answers": [
+                    "Təfsir bi'r-Ra'y",
+                    "Təfsir bil-Ma'thur",
+                    "Sufi Təfsir",
+                    "Şəriət Təfsiri"
+                ],
+                "correctAnswers": [
+                    "Təfsir bi'r-Ra'y",
+                    "Təfsir bil-Ma'thur",
+                    "Sufi Təfsir"
+                ]
+            }
+        ],
+        "normal": [
+            {
+                "id": 4,
+                "questionTitle": "Təfsir bil-Ma'thur nə deməkdir?",
+                "img": "https://example.com/images/tafsir-bil-mathur.png",
+                "answers": [
+                    "Quranda və hədislərdə verilən izahlar əsasında təfsir",
+                    "Alimlərin şəxsi fikirləri əsasında təfsir",
+                    "Ərəbcə dil qaydalarına əsaslanan təfsir",
+                    "Quranda verilən elmi mövzuların təfsiri"
+                ],
+                "correctAnswers": [
+                    "Quranda və hədislərdə verilən izahlar əsasında təfsir"
+                ]
+            },
+            {
+                "id": 6,
+                "questionTitle": "İbn Kəsir haqqında doğru olanları seçin:",
+                "img": "https://example.com/images/ibn-kathir.png",
+                "answers": [
+                    "Məşhur təfsirçi alim",
+                    "Hədis ravisi",
+                    "İslam filosofu",
+                    "Şəriət qanunlarının tərtibatçısı"
+                ],
+                "correctAnswers": [
+                    "Məşhur təfsirçi alim",
+                    "Hədis ravisi"
+                ]
+            }
+        ],
+        "hard": [
+            {
+                "id": 8,
+                "questionTitle": "Sufi təfsiri nəyi əhatə edir?",
+                "img": "https://example.com/images/sufi-tafsir.png",
+                "answers": [
+                    "Quranın mənəvi və batini izahları",
+                    "Quranın hüquqi məsələlərə aid izahları",
+                    "Quranın dil qaydalarına əsaslanan izahları",
+                    "Tarixi hadisələrin təfsiri"
+                ],
+                "correctAnswers": [
+                    "Quranın mənəvi və batini izahları",
+                    "Quranın ruhani mənalarını açıqlamaq"
+                ]
+            },
+            {
+                "id": 9,
+                "questionTitle": "Qurani-Kərimin ilk təfsiri hansı dilə tərcümə edilmişdir?",
+                "img": "https://example.com/images/quran-translation.png",
+                "answers": [
+                    "Ərəb dilinə",
+                    "Fars dilinə",
+                    "Türk dilinə",
+                    "İngilis dilinə"
+                ],
+                "correctAnswers": [
+                    "Fars dilinə",
+                    "Türk dilinə"
+                ]
+            }
+        ]
+    },
+    "fiqhQuestions": {
+        "easy": [
+            {
+                "id": 1,
+                "questionTitle": "Fiqh nədir?",
+                "img": "https://example.com/image1.jpg",
+                "answers": [
+                    "İslamın ibadət və əməli hökmlərinin öyrənilməsi elmi",
+                    "Ərəb dilinin qrammatikası",
+                    "Quranın təfsiri",
+                    "Hədislərin öyrənilməsi"
+                ],
+                "correctAnswers": [
+                    "İslamın ibadət və əməli hökmlərinin öyrənilməsi elmi"
+                ]
+            },
+            {
+                "id": 2,
+                "questionTitle": "Namazın fərzlərindən biri hansıdır?",
+                "img": "https://example.com/image2.jpg",
+                "answers": [
+                    "Zəkat vermək",
+                    "Rüku",
+                    "Oruc tutmaq",
+                    "Həccə getmək"
+                ],
+                "correctAnswers": [
+                    "Rüku"
+                ]
+            }
+        ],
+        "normal": [
+            {
+                "id": 4,
+                "questionTitle": "Qadının başı örtülü olmalıdırmı?",
+                "img": "https://example.com/image4.jpg",
+                "answers": [
+                    "Fərz deyil",
+                    "Ərindən icazə alaraq qərar verə bilər",
+                    "Yalnız məsciddə",
+                    "Bəli, hicab vacibdir"
+                ],
+                "correctAnswers": [
+                    "Bəli, hicab vacibdir"
+                ]
+            },
+            {
+                "id": 8,
+                "questionTitle": "Zəkat nə zaman vacib olur?",
+                "img": "https://example.com/image8.jpg",
+                "answers": [
+                    "Sadəcə Ramazan ayında",
+                    "Mal-dövlət nisab miqdarına çatdıqda",
+                    "Övlad sahibi olduqda",
+                    "Həcc vaxtı"
+                ],
+                "correctAnswers": [
+                    "Mal-dövlət nisab miqdarına çatdıqda"
+                ]
+            }
+        ],
+        "hard": [
+            {
+                "id": 9,
+                "questionTitle": "Fiqh elmində qiyas nədir?",
+                "img": "https://example.com/image9.jpg",
+                "answers": [
+                    "Hədislərin tərtibatı",
+                    "Şəriətdə hökm olmayan bir məsələni, hökmü olan bir məsələyə bənzədərək hökm vermək",
+                    "Ərəb dilinin qaydaları",
+                    "İslam tarixi ilə bağlı məlumatlar"
+                ],
+                "correctAnswers": [
+                    "Şəriətdə hökm olmayan bir məsələni, hökmü olan bir məsələyə bənzədərək hökm vermək"
+                ]
+            },
+            {
+                "id": 10,
+                "questionTitle": "Təharət hansı halda pozulur?",
+                "img": "https://example.com/image10.jpg",
+                "answers": [
+                    "Qurani-Kərim oxunduqda",
+                    "Sidik və ya nəcasət çıxışı",
+                    "Sadəcə əl yuyulmadıqda",
+                    "Bədənə su dəymədikdə"
+                ],
+                "correctAnswers": [
+                    "Sidik və ya nəcasət çıxışı"
+                ]
+            }
+        ]
+    }
+}

@@ -24,7 +24,7 @@ const Login = () => {
         <div style={{ backgroundImage: `url(${Bgİmage})`, backgroundSize: 'cover', backgroundPosition: 'center', height: '100vh' }} className='py-5'>
             <Container>
                 <Row>
-                    <Col lg={12} className='d-flex align-items-center justify-content-end'>
+                    <Col lg={12} className='d-flex align-items-center justify-content-start'>
                         <div className='py-2 px-5 rounded-4'>
                             <Link to="/" className="text-white text-decoration-none fs-3 fw-bold">Ana Səhifə</Link>
                         </div>
