@@ -14,6 +14,7 @@ const socialLinks = [
 const navLinks = [
     { to: '/', text: 'Anasayfa' },
     { to: '/about', text: 'Hakkımızda' },
+    { to: '/aya', text: 'Ayet' },
     { to: '/dua', text: 'Dua' },
     { to: '/questions', text: 'Testler' },
     { to: '/contact', text: 'İletişim' }
